@@ -1,45 +1,32 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage[utf8]{inputenc}
+\documentclass{article}
 \usepackage{graphicx}
-\usepackage{geometry}
-\usepackage{titling}
-\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
+\usepackage{subcaption}
 
-\geometry{margin=1in}
-
-\title{Progetto SmartCycle}
-\author{Alessandro Dori}
-\date{28 Novembre 2024}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{Alessandro Dori}
+\fancyfoot[R]{\thepage}
+\fancyhead[L]{Interazione Uomo Macchina}
+\fancyhead[R]{SmartCycle}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
 
 \begin{document}
+\begin{center}
+    \Huge Progetto Interazione Uomo Macchina
+        \vspace{0.5cm}
 
-\begin{titlepage}
-    \centering
-    \vspace*{2cm}
-    
-    \Huge
-    \textbf{Progetto SmartCycle}
-    \includegraphics[width=0.4\textwidth]{immagini/logoSapienza.png}
-    
-    \vspace{1.5cm}
-    
-    \LARGE
-    Domande dei Questionari e Statistiche Ottenute
-    
-    \Large
-    \textbf{Alessandro Dori 1843237}
-    
-    \vspace{0.8cm}
-    
-    \Large
-    \today
-    
-    \vspace{2cm}
-    
-    \includegraphics[width=0.4\textwidth]{immagini/logoSapienza.png}
-    
-\end{titlepage}
+        \large A.A. 2024/2025 - Alessandro Dori 1843237
+        \vspace{1cm}
+
+        \large \textsf{\textbf{SmartCycle}}
+
+        \includegraphics[width=0.3\textwidth, trim=110 110 110 110, clip]{img/SM.png}
+\end{center}
 
 \tableofcontents
 \newpage
@@ -61,5 +48,99 @@ Questo documento servirà come riferimento per le fasi successive del progetto, 
     \item Quanto sei disposto a spendere per acquistare cibo invenduto?
     \item Quanto spesso utilizzi applicazioni per acquistare cibo invenduto?
 \end{enumerate}
+
+\newpage
+\section{Analisi dei Questionari}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/eta.png}
+        \caption{Distribuzione delle età dei partecipanti}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/occupazione.png}
+        \caption{Distribuzione delle occupazioni dei partecipanti}
+    \end{subfigure}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/composizione_familiare.png}
+        \caption{Distribuzione della composizione familiare}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/tempo_spesa.png}
+        \caption{Tempo dedicato alla spesa alimentare}
+    \end{subfigure}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/frequenza_cucina.png}
+        \caption{Frequenza di cucina settimanale}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/frequenza_buttare.png}
+        \caption{Frequenza di cibo buttato settimanale}
+    \end{subfigure}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/frequenza_ordine.png}
+        \caption{Frequenza di ordine cibo settimanale}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/graphic2.png}
+        \caption{Importanza della riduzione degli sprechi alimentari}
+    \end{subfigure}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/graphic3.png}
+        \caption{Importanza della riduzione degli sprechi alimentari}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/graphic4.png}
+        \caption{Disponibilità a spendere per cibo invenduto}
+    \end{subfigure}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/graphic.png}
+        \caption{Frequenza di utilizzo di applicazioni per cibo invenduto}
+    \end{subfigure}
+\end{figure}
+
+\clearpage
+\section{Conclusioni}
+Dai risultati dei questionari emerge che la maggior parte delle persone intervistate non conosce applicazioni come Too Good To Go e Olio.
+Una buona parte delle persone intervistate butta cibo almeno una volta a settimana.
+Per la maggior parte delle persone è molto importante ridurre lo spreco alimentare.
+Molte persone sono disposte a spendere una fascia di prezzo tra i 5 e i 10 euro per acquistare cibo invenduto.
 
 \end{document}
