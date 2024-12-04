@@ -3,6 +3,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper, total={6in, 8in}]{geometry}
 \usepackage{fancyhdr}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -51,15 +58,6 @@ Sono state condotte delle interviste per capire meglio le abitudini alimentari d
 In particolare sono state fatte domande riguardo la frequenza con cui si butta cibo, la frequenza con cui si ordina cibo a domicilio, la frequenza con cui si cucina, la frequenza con cui si fa la spesa, e la frequenza con cui si utilizzano applicazioni per acquistare cibo invenduto.
 
 \subsection{Resoconto Interviste}
-A seguito delle interviste sono emersi i seguenti \textbf{need}:
-\begin{itemize}
-    \item Gli utenti apprezzerebbero la possibilità di pagare una box di cibo invenduto per donarla a chi ne ha bisogno.
-    \item Gli utenti necessitano fasce orarie di ritiro del cibo invenduto più flessibili (inserire la fascia oraria come parametro di ricerca).
-    \item Gli utenti sono interessati a sapere la quantità di cibo della box (per esempio, quanti pasti si possono preparare/coprire con il cibo ricevuto).
-    \item Gli utenti in alcuni casi preferirebbero avere una ricetta consigliata per il cibo ricevuto, così da poterlo utilizzare al meglio (nel caso in cui il contenuto della box sia da preparare).
-    \item Gli utenti necessitano di un servizio di consegna a domicilio del cibo invenduto.
-\end{itemize}
-
 Dalle interviste svolte emerge un forte interesse per soluzioni mirate alla riduzione dello spreco alimentare. 
 Gli intervistati si sono dimostrati molto consapevoli del problema e interessati all’idea di contribuire concretamente a contrastarlo.
 \newline
@@ -75,22 +73,130 @@ Dai risultati del questionario emerge che:
     \item Per la maggior parte delle persone è molto importante ridurre lo spreco alimentare.
     \item Molte persone sono disposte a spendere una fascia di prezzo tra i 5 e i 10 euro per acquistare cibo invenduto.
 \end{itemize}
-Seguono i risultati dettagliati delle principali risposte del questionario.
+\newpage
+\hbox{Seguono i risultati dettagliati delle principali risposte del questionario.}
 
-\begin{center}
-    \includegraphics[width=0.5\textwidth]{img/graphic.png} \includegraphics[width=0.45\textwidth]{img/graphic2.png}
-    \includegraphics[width=0.5\textwidth]{img/graphic3.png} \includegraphics[width=0.45\textwidth]{img/graphic4.png}
-\end{center}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/graphic.png}
+        \caption{Utilizzo applicazioni per acquistare cibo invenduto}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/graphic2.png}
+        \caption{Frequenza con cui si butta cibo}
+    \end{subfigure}
+\end{figure}
 
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/graphic3.png}
+        \caption{Importanza riduzione spreco alimentare}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/graphic4.png}
+        \caption{Fascia di prezzo per acquistare cibo invenduto}
+    \end{subfigure}
+\end{figure}
+
+\hbox{A seguito delle interviste e dei questionari sono emersi i seguenti \textbf{Need}:}
+\begin{enumerate}[label=\textbf{Need-\arabic*}]
+    \item Gli utenti apprezzerebbero la possibilità di pagare una box di cibo invenduto per donarla a chi ne ha bisogno. \label{need1}
+    \item Gli utenti sono interessati a non sprecare cibo e a ridurre lo spreco alimentare. \label{need2}
+    \item Gli utenti necessitano fasce orarie di ritiro del cibo invenduto più flessibili (inserire la fascia oraria come parametro di ricerca). \label{need3}
+    \item Gli utenti sono interessati a sapere la quantità di cibo della box (per esempio, quanti pasti si possono preparare/coprire con il cibo ricevuto). \label{need4}
+    \item Gli utenti in alcuni casi preferirebbero avere una ricetta consigliata per il cibo ricevuto, così da poterlo utilizzare al meglio (nel caso in cui il contenuto della box sia da preparare). \label{need5}
+    \item Gli utenti necessitano di un servizio di consegna a domicilio del cibo invenduto. \label{need6}
+    \item Fornire agli utenti la possibilità di filtrare i risultati dei locali. \label{need7}
+    \item Possibilità di pagamento online. \label{need8}
+\end{enumerate}
+
+
+
+\newpage
 \subsection{Task Analysis}
 A seguito delle interviste e dei risultati del questionario, sono stati identificati i task principali che l'utente potrà svolgere con SmartCycle.
 \newline
 I task principali sono:
-\begin{itemize}
+\begin{enumerate}
     \item L'utente filtra i risultati dei locali per disponibilità di donazione a persone bisognose, sceglie un locale e acquista una box di cibo invenduto da donare.
+    \begin{itemize}
+        \item Risolve il \hyperref[need1]{\textcolor{blue}{Need 1}} e \hyperref[need7]{\textcolor{blue}{Need 7}}.
+    \end{itemize}
+    \item L'utente annuncia la disponibilità di cibo invenduto da regalare/vendere, fornendo informazioni/foto sul cibo e la quantità disponibile.
+    \begin{itemize}
+        \item Risolve il \hyperref[need2]{\textcolor{blue}{Need 2}}.
+    \end{itemize}
     \item L'utente filtra i risultati dei locali per fascia oraria di ritiro/consegna del cibo invenduto, sceglie un locale e prenota una box di cibo invenduto.
+    \begin{itemize}
+        \item Risolve il \hyperref[need3]{\textcolor{blue}{Need 3}} e \hyperref[need7]{\textcolor{blue}{Need 7}}.
+    \end{itemize}
     \item L'utente dopo aver scelto il locale, visualizza la quantità di cibo della box (porzioni) ed eventualmente ricevere una ricetta consigliata per il cibo acquistato (nel caso in cui il la box contenga cibo da preparare).
+    \begin{itemize}
+        \item Risolve il \hyperref[need4]{\textcolor{blue}{Need 4}} e \hyperref[need5]{\textcolor{blue}{Need 5}}.
+    \end{itemize}
     \item L'utente sceglie un locale, acquista una box di cibo invenduto e dopo aver comunicato il proprio indirizzo richiede la consegna a domicilio.
-\end{itemize}
+    \begin{itemize}
+        \item Risolve il \hyperref[need6]{\textcolor{blue}{Need 6}}.
+    \end{itemize}
+    \item L'utente filtra i risultati dei locali per disponibilità di pagamento online, sceglie un locale e acquista una box di cibo invenduto.
+    \begin{itemize}
+        \item Risolve il \hyperref[need8]{\textcolor{blue}{Need 8}} e \hyperref[need7]{\textcolor{blue}{Need 7}}.
+    \end{itemize}
+\end{enumerate}
+
+\clearpage
+\section{Storyboard}
+
+\subsection{Task 1}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Storyboard/t1.1.png}
+    \end{subfigure}
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Storyboard/t1.2.png}
+    \end{subfigure}
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Storyboard/t1.3.png}
+    \end{subfigure}
+    \begin{subfigure}{0.3\textwidth}
+        \leftskip -4.65cm
+        \includegraphics[width=\textwidth]{Storyboard/t1.4.png}
+    \end{subfigure}
+\end{figure}
+
+\subsection{Task 2}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Storyboard/t2.1.png}
+    \end{subfigure}
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Storyboard/t2.2.png}
+    \end{subfigure}
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Storyboard/t2.3.png}
+    \end{subfigure}
+    \begin{subfigure}{0.3\textwidth}
+        \leftskip -4.65cm
+        \includegraphics[width=\textwidth]{Storyboard/t2.4.png}
+    \end{subfigure}
+\end{figure}
+
+
 
 \end{document}
