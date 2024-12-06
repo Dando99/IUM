@@ -9,6 +9,7 @@
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage{graphicx}
+\usepackage{tcolorbox}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -31,6 +32,16 @@
 
         \includegraphics[width=0.3\textwidth, trim=110 110 110 110, clip]{img/SM.png}
 \end{center}
+
+\section{Storico Revisioni}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Revisione} & \textbf{Data} & \textbf{Modifiche} \\ \hline
+        1 & 06/12/2024 & // \\ \hline
+    \end{tabular}
+\end{table}
 
 \section{Obiettivo}
 Il progetto nasce dall'idea di sviluppare un sistema digitale che aiuti a ridurre gli sprechi alimentari, ispirato al modello di Too Good To Go e Olio. 
@@ -107,13 +118,13 @@ Dai risultati del questionario emerge che:
 
 \hbox{A seguito delle interviste e dei questionari sono emersi i seguenti \textbf{Need}:}
 \begin{enumerate}[label=\textbf{Need-\arabic*}]
-    \item Gli utenti apprezzerebbero la possibilità di pagare una box di cibo invenduto per donarla a chi ne ha bisogno. \label{need1}
+    \item Possibilità di pagare una box di cibo invenduto per donarla a chi ne ha bisogno. \label{need1}
     \item Gli utenti sono interessati a non sprecare cibo e a ridurre lo spreco alimentare. \label{need2}
-    \item Gli utenti necessitano fasce orarie di ritiro del cibo invenduto più flessibili (inserire la fascia oraria come parametro di ricerca). \label{need3}
-    \item Gli utenti sono interessati a sapere la quantità di cibo della box (per esempio, quanti pasti si possono preparare/coprire con il cibo ricevuto). \label{need4}
-    \item Gli utenti in alcuni casi preferirebbero avere una ricetta consigliata per il cibo ricevuto, così da poterlo utilizzare al meglio (nel caso in cui il contenuto della box sia da preparare). \label{need5}
+    \item Necessità di fasce orarie di ritiro del cibo invenduto più flessibili (inserire la fascia oraria come parametro di ricerca). \label{need3}
+    \item Sapere prima dell'acquisto la quantità di cibo della box (per esempio, quanti pasti si possono preparare/coprire con il cibo ricevuto). \label{need4}
+    \item Ricevere una possibile ricetta consigliata per il cibo ricevuto, così da poterlo utilizzare al meglio (nel caso in cui il contenuto della box sia da preparare). \label{need5}
     \item Gli utenti necessitano di un servizio di consegna a domicilio del cibo invenduto. \label{need6}
-    \item Fornire agli utenti la possibilità di filtrare i risultati dei locali. \label{need7}
+    \item Possibilità di filtrare i risultati dei locali. \label{need7}
     \item Possibilità di pagamento online. \label{need8}
 \end{enumerate}
 
@@ -123,38 +134,75 @@ Dai risultati del questionario emerge che:
 \subsection{Task Analysis}
 A seguito delle interviste e dei risultati del questionario, sono stati identificati i task principali che l'utente potrà svolgere con SmartCycle.
 \newline
-I task principali sono:
-\begin{enumerate}
+I \textbf{task} principali sono:
+\begin{enumerate}[label=\textbf{Task-\arabic*}]
     \item L'utente filtra i risultati dei locali per disponibilità di donazione a persone bisognose, sceglie un locale e acquista una box di cibo invenduto da donare.
     \begin{itemize}
         \item Risolve il \hyperref[need1]{\textcolor{blue}{Need 1}} e \hyperref[need7]{\textcolor{blue}{Need 7}}.
+        \item \textbf{Sottotask:} 
+        \begin{itemize}
+            \item Filtrare i risultati dei locali per disponibilità di donazione.
+            \item Scegliere un locale da cui acquistare una box di cibo invenduto da donare.
+            \item Acquistare una box di cibo invenduto da donare.
+        \end{itemize}
     \end{itemize}
     \item L'utente annuncia la disponibilità di cibo invenduto da regalare/vendere, fornendo informazioni/foto sul cibo e la quantità disponibile.
     \begin{itemize}
         \item Risolve il \hyperref[need2]{\textcolor{blue}{Need 2}}.
+        \item \textbf{Sottotask:} 
+        \begin{itemize}
+            \item Inserire informazioni sul cibo da regalare/vendere.
+            \item Inserire la quantità disponibile del cibo.
+            \item Inserire una foto del cibo disponibile.
+        \end{itemize}
     \end{itemize}
     \item L'utente filtra i risultati dei locali per fascia oraria di ritiro/consegna del cibo invenduto, sceglie un locale e prenota una box di cibo invenduto.
     \begin{itemize}
         \item Risolve il \hyperref[need3]{\textcolor{blue}{Need 3}} e \hyperref[need7]{\textcolor{blue}{Need 7}}.
+        \item \textbf{Sottotask:} 
+        \begin{itemize}
+            \item Filtrare i risultati dei locali per fascia oraria.
+            \item Scegliere un locale da cui acquistare una box di cibo invenduto.
+            \item Prenotare una box di cibo invenduto.
+        \end{itemize}
     \end{itemize}
-    \item L'utente dopo aver scelto il locale, visualizza la quantità di cibo della box (porzioni) ed eventualmente ricevere una ricetta consigliata per il cibo acquistato (nel caso in cui il la box contenga cibo da preparare).
+    \item L'utente dopo aver scelto il locale, visualizza la quantità di cibo della box (porzioni) ed eventualmente riceve una ricetta consigliata per il cibo acquistato (nel caso in cui la box contenga cibo da preparare).
     \begin{itemize}
         \item Risolve il \hyperref[need4]{\textcolor{blue}{Need 4}} e \hyperref[need5]{\textcolor{blue}{Need 5}}.
+        \item \textbf{Sottotask:} 
+        \begin{itemize}
+            \item Visualizzare la quantità di cibo della box (porzioni).
+            \item Ricevere una ricetta consigliata per il cibo acquistato.
+        \end{itemize}
     \end{itemize}
     \item L'utente sceglie un locale, acquista una box di cibo invenduto e dopo aver comunicato il proprio indirizzo richiede la consegna a domicilio.
     \begin{itemize}
         \item Risolve il \hyperref[need6]{\textcolor{blue}{Need 6}}.
+        \item \textbf{Sottotask:} 
+        \begin{itemize}
+            \item Scegliere un locale.
+            \item Acquistare una box di cibo invenduto.
+            \item Comunicare l'indirizzo per la consegna a domicilio.
+            \item Richiedere la consegna a domicilio.
+        \end{itemize}
     \end{itemize}
     \item L'utente filtra i risultati dei locali per disponibilità di pagamento online, sceglie un locale e acquista una box di cibo invenduto.
     \begin{itemize}
         \item Risolve il \hyperref[need8]{\textcolor{blue}{Need 8}} e \hyperref[need7]{\textcolor{blue}{Need 7}}.
+        \item \textbf{Sottotask:} 
+        \begin{itemize}
+            \item Filtrare i risultati dei locali per disponibilità di pagamento online.
+            \item Scegliere un locale da cui acquistare una box di cibo invenduto.
+            \item Acquistare una box di cibo invenduto con pagamento online.
+        \end{itemize}
     \end{itemize}
 \end{enumerate}
+    
 
-\clearpage
 \section{Storyboard}
 
 \subsection{Task 1}
+L’utente filtra i risultati dei locali per disponibilità di donazione a persone bisognose, sceglie un locale e acquista una box di cibo invenduto da donare.
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.25\textwidth}
@@ -178,7 +226,9 @@ I task principali sono:
     \end{subfigure}
 \end{figure}
 
+\newpage
 \subsection{Task 2}
+L'utente annuncia la disponibilità di cibo invenduto da regalare/vendere, fornendo informazioni/foto sul cibo e la quantità disponibile.
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.25\textwidth}
