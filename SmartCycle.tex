@@ -10,6 +10,7 @@
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage{tcolorbox}
+\usepackage{array}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -36,12 +37,16 @@
 \section{Storico Revisioni}
 \begin{table}[H]
     \centering
-    \begin{tabular}{|c|c|c|}
+    \renewcommand{\arraystretch}{1} % Aumenta lo spazio tra le righe per migliorare la leggibilità
+    \begin{tabular}{|m{2cm}|m{3cm}|p{8cm}|}
         \hline
-        \textbf{Revisione} & \textbf{Data} & \textbf{Modifiche} \\ \hline
-        1 & 06/12/2024 & // \\ \hline
+            \textbf{Revisione} & \textbf{Data} & \textbf{Modifiche} \\ \hline
+            \centering 1 & \centering 06/12/2024 & \begin{tabular}[c]{@{}p{8cm}@{}}Inserimento sottotask (filtrare per Città) nello Storyboard del Task 1, correzione termine "post" con il termine "annuncio" nello Storyboard del Task 2, creazione Task 3\end{tabular} \\ \hline
+            \centering 2 & \centering // & \begin{tabular}[c]{@{}p{8cm}@{}}//\end{tabular} \\ \hline
     \end{tabular}
+    \label{tab:revisione}
 \end{table}
+
 
 \section{Obiettivo}
 Il progetto nasce dall'idea di sviluppare un sistema digitale che aiuti a ridurre gli sprechi alimentari, ispirato al modello di Too Good To Go e Olio. 
@@ -141,8 +146,8 @@ I \textbf{task} principali sono:
         \item Risolve il \hyperref[need1]{\textcolor{blue}{Need 1}} e \hyperref[need7]{\textcolor{blue}{Need 7}}.
         \item \textbf{Sottotask:} 
         \begin{itemize}
-            \item Filtrare i risultati dei locali per disponibilità di donazione.
-            \item Scegliere un locale da cui acquistare una box di cibo invenduto da donare.
+            \item Filtrare i risultati dei locali per disponibilità di donazione e Città.
+            \item Scegliere un locale da cui acquistare una box di cibo invenduto da donare (box standard, non personalizzabili).
             \item Acquistare una box di cibo invenduto da donare.
         \end{itemize}
     \end{itemize}
@@ -161,7 +166,7 @@ I \textbf{task} principali sono:
         \item Risolve il \hyperref[need3]{\textcolor{blue}{Need 3}} e \hyperref[need7]{\textcolor{blue}{Need 7}}.
         \item \textbf{Sottotask:} 
         \begin{itemize}
-            \item Filtrare i risultati dei locali per fascia oraria.
+            \item Filtrare i risultati dei locali per fascia oraria e Città.
             \item Scegliere un locale da cui acquistare una box di cibo invenduto.
             \item Prenotare una box di cibo invenduto.
         \end{itemize}
@@ -205,52 +210,36 @@ I \textbf{task} principali sono:
 L’utente filtra i risultati dei locali per disponibilità di donazione a persone bisognose, sceglie un locale e acquista una box di cibo invenduto da donare.
 \begin{figure}[H]
     \centering
-    \begin{subfigure}{0.25\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Storyboard/task1-img/t1.1.png}
-    \end{subfigure}
-    \hspace{0.02\textwidth}
-    \begin{subfigure}{0.25\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Storyboard/task1-img/t1.2.png}
-    \end{subfigure}
-    \hspace{0.02\textwidth}
-    \begin{subfigure}{0.25\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Storyboard/task1-img/t1.3.png}
-    \end{subfigure}
-    \hspace{0.02\textwidth}
-    \begin{subfigure}{0.25\textwidth}
-        \leftskip -4.33cm
-        \includegraphics[width=\textwidth]{Storyboard/task1-img/t1.4.png}
-    \end{subfigure}
+    \begin{tabular}{ccc}
+        \includegraphics[width=0.3\textwidth]{Storyboard/task1-img II versione/t1.1.png} &
+        \includegraphics[width=0.3\textwidth]{Storyboard/task1-img II versione/t1.2.png} &
+        \includegraphics[width=0.3\textwidth]{Storyboard/task1-img II versione/t1.3.png} \\
+        \includegraphics[width=0.3\textwidth]{Storyboard/task1-img II versione/t1.4.png} &
+        \includegraphics[width=0.3\textwidth]{Storyboard/task1-img II versione/t1.5.png} &
+        \includegraphics[width=0.3\textwidth]{Storyboard/task1-img II versione/t1.6.png} \\
+    \end{tabular}
+    \label{fig:task1}
 \end{figure}
+
 
 \newpage
 \subsection{Task 2}
 L'utente annuncia la disponibilità di cibo invenduto da regalare/vendere, fornendo informazioni/foto sul cibo e la quantità disponibile.
 \begin{figure}[H]
     \centering
-    \begin{subfigure}{0.25\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Storyboard/task2-img/t2.1.png}
-    \end{subfigure}
-    \hspace{0.02\textwidth}
-    \begin{subfigure}{0.25\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Storyboard/task2-img/t2.2.png}
-    \end{subfigure}
-    \hspace{0.02\textwidth}
-    \begin{subfigure}{0.25\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Storyboard/task2-img/t2.3.png}
-    \end{subfigure}
-    \hspace{0.02\textwidth}
-    \begin{subfigure}{0.25\textwidth}
-        \leftskip -4.33cm
-        \includegraphics[width=\textwidth]{Storyboard/task2-img/t2.4.png}
-    \end{subfigure}
+    \begin{tabular}{ccc}
+        \includegraphics[width=0.3\textwidth]{Storyboard/task2-img II versione/t2.1.png} &
+        \includegraphics[width=0.3\textwidth]{Storyboard/task2-img II versione/t2.2.png} &
+        \includegraphics[width=0.3\textwidth]{Storyboard/task2-img II versione/t2.3.png} \\
+        \includegraphics[width=0.3\textwidth]{Storyboard/task2-img II versione/t2.4.png} & & \\
+    \end{tabular}
+    \label{fig:task2}
 \end{figure}
+
+\newpage
+\subsection{Task 3}
+
+
 
 
 
