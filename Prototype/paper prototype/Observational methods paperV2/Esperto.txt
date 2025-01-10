@@ -1,0 +1,104 @@
+1. Visibilità dello stato del sistema (1a euristica)
+
+1. Osservazione (Task 1)  
+   - L’utente, per avviare la procedura, fa subito riferimento all’icona dei filtri in alto a destra, poi seleziona donazione e inserisce la città manualmente. Dopo avere applicato i filtri, sceglie un locale e procede all’acquisto di una box donazione.  
+   - Problema: Potrebbe non essere chiaro se i filtri siano effettivamente attivi e quali risultati siano stati filtrati.
+   - Gravità: 2 (Medio).  
+   - Suggerimento: Fornire un riscontro visivo per indicare che un filtro è attivato.
+
+
+
+
+2. Corrispondenza tra il sistema e il mondo reale (2a euristica)
+
+1. Osservazione (Task 2)  
+   - L’icona per inserire le foto potrebbe non essere immediatamente chiara: l’utente si aspetta di poter accedere alla fotocamera o alla galleria.  
+   - Problema: Se l’icona non rispetta abitudini, può causare dubbi.  
+   - Gravità: 1 (Basso).  
+   - Suggerimento: Utilizzare un’icona comune (ad esempio la sagoma di una fotocamera) o la dicitura “Aggiungi foto” per facilitare il riconoscimento.
+
+
+
+
+3. Controllo e libertà dell’utente (3a euristica)
+
+1. Osservazione (Task 1 e Task 3)  
+   - Nelle diverse fasi l’utente utilizza filtri (donazione, consegna, posizione corrente, fascia oraria) ma non ha sempre chiaro se deve seguire un ordine nelle operazioni oppure può eseguire il filtraggio in maniera arbitraria.
+   - Problema: Flusso delle operazioni da eseguire poco chiaro.
+   - Gravità: 2 (Medio).  
+   - Suggerimento: Far capire l'ordine corretto delle operazioni da eseguire.
+
+
+
+4. Coerenza e standard (4a euristica)
+
+1. Osservazione (Task 3)  
+   - L’utente clicca sul bottone "consegna" dopo avere scelto una box, ma non è chiaro perchè venga richiesto l'inserimento dell'indirizzo, se già precedentemente inserito nei filtri. 
+   - Problema: Mancanza di coerenza nelle richieste del sistema.
+   - Gravità: 2 (Medio).  
+   - Suggerimento: Verificare le informazioni inserite dall'utilizzatore per evitare di chiedere informazioni ridondanti.
+
+
+
+
+5. Prevenzione degli errori (5a euristica)
+
+1. Osservazione (Task 1 e Task 3)  
+   - L’utente potrebbe non aver subito chiara la sezione da cliccare una volta aver scelto il locale, le sezioni per le donazioni e per l'acquisto classico sono separate e poco chiare.  
+   - Problema: Rischio di cliccare l’opzione sbagliata e ottenere risultati diversi da quelli desiderati.  
+   - Gravità: 3 (Alto), perché può causare errori ripetuti.  
+   - Suggerimento: Rendere più chiaro il significato delle voci di menu o delle icone.
+
+
+
+
+6. Riconoscimento piuttosto che ricordo (6a euristica)
+
+1. Osservazione (Task 1)  
+   - L’utente, dopo aver effettuato l’acquisto, deve ricordare dove trovare l’“Area Riservata” per andare in “ordini”.
+   - Gravità: 1 (Basso).  
+   - Suggerimento: 
+
+
+
+
+7. Flessibilità ed efficienza d’uso (7a euristica)
+
+1. Osservazione (Task 2)  
+   - L’utente vorrebbe inserire foto, titolo, descrizione, quantità e orari con comandi immediati.  
+   - Problema: Se queste funzioni non sono ben comprensibili, l'utente deve inserire i dati manualmente.  
+   - Gravità: 1 (Basso).  
+   - Suggerimento: 
+
+
+
+
+8. Design estetico e minimalista (8a euristica)
+
+1. Osservazione generale  
+   - Nelle fasi di pagamento ci sono più pulsanti ravvicinati, specialmente nella parte bassa schermo.
+   - Problema: Eccesso di elementi.  
+   - Gravità: 1 (Basso).  
+   - Suggerimento: Ridistribuire le icone per rendere l’interfaccia più pulita.
+
+
+
+
+9. Aiutare gli utenti a riconoscere, diagnosticare e risolvere gli errori (9a euristica)
+
+1. Osservazione (Task 2)  
+   - L’utente decide di inserire “tutti 0” per indicare che regala le confezioni, ma non è chiaro se il sistema permetta effettivamente di procedere con un prezzo pari a zero o se generi un errore.  
+   - Problema: Potenziale assenza di indicazioni o avvisi quando il prezzo è nullo o non valido.  
+   - Gravità: 2 (Medio).  
+   - Suggerimento: Prevedere un messaggio di conferma (“Confermi che vuoi regalare le confezioni?”) oppure, se non consentito, un messaggio di errore esplicito (“Il prezzo non può essere zero se non si tratta di una donazione”).
+
+
+
+
+10. Aiuto e documentazione (10a euristica)
+
+1. Osservazione (Task 1)  
+   - L’utente, dopo avere acquistato una box, vuole controllare lo stato dell’ordine e va in “area riservata” –> “ordini”, ma potrebbe non essere immediatamente chiaro a un nuovo utilizzatore dove trovare queste sezioni.  
+   - Problema: Mancanza di un piccolo tutorial o di un percorso guidato che spieghi come gestire gli ordini.  
+   - Gravità: 2 (Medio).  
+   - Suggerimento: Fornire un breve tutorial iniziale o inserire un semplice messaggio di guida (“Per visualizzare i tuoi ordini, vai su Area Riservata > Ordini in corso”) non appena si conclude l’acquisto di una box.

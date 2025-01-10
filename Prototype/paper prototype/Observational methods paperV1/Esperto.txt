@@ -1,0 +1,129 @@
+1. Visibilità dello stato del sistema (1a euristica)
+
+1. Osservazione (Task 1)  
+   - L’utente non comprende se la “mappa” sia una modalità di visualizzazione o un filtro per la posizione.  
+   - Problema: Mancanza di un’indicazione chiara dello stato del sistema (quale vista è attiva o quale filtro è in funzione).  
+   - Gravità: 2 (Medio) perché l’utente può comunque procedere, ma con confusione.  
+   - Suggerimento: Evidenziare visivamente la modalità in uso (ad esempio, “Vista Mappa” attiva), magari con un testo o un’icona che si illumini, in modo da chiarire se si è in modalità mappa o in un elenco.
+
+2. Osservazione (Task 1)  
+   - L’icona della posizione (GPS) non è immediatamente chiara: non si sa se serva a filtrare per posizione.  
+   - Problema: Mancanza di un riscontro.  
+   - Gravità: 2 (Medio).  
+   - Suggerimento: Aggiungere la possibilità di filtrare la posizione nei filtri generali.
+
+
+
+
+2. Corrispondenza tra il sistema e il mondo reale (2a euristica)
+
+1. Osservazione (Task 1)  
+   - L’utente legge “Cerca una città” ma desidera invece inserire un indirizzo preciso.  
+   - Problema: Il testo non corrisponde a ciò che l’utente si aspetta di fare.  
+   - Gravità: 2 (Medio).  
+   - Suggerimento: Modificare l’etichetta in “Cerca indirizzo o città” o “Inserisci indirizzo” e consentire l’inserimento di via e numero civico.
+
+2. Osservazione (Task 2)  
+   - L’icona per le foto potrebbe non essere intuitiva: l’utente si aspetta funzioni come l’apertura della fotocamera o della galleria immagini.  
+   - Problema: Se l’icona non rispetta abitudini consolidate o standard, può creare perplessità.  
+   - Gravità: 1 (Basso).  
+   - Suggerimento: Utilizzare un’icona facilmente riconoscibile o aggiungere un’etichetta come “Carica foto”.
+
+
+
+
+
+3. Controllo e libertà dell’utente (3a euristica)
+
+1. Osservazione (Task 1 e Task 3)  
+   - L’utente non trova subito il modo di filtrare per città: inizialmente cerca i filtri nelle opzioni generali, poi scopre che deve premere sull’icona della posizione (GPS).  
+   - Problema: Mancanza di un unico pannello di filtri centralizzato.  
+   - Gravità: 2 (Medio).  
+   - Suggerimento: Unire tutti i filtri in un unico pannello, offrendo la possibilità di scegliere liberamente se inserire il nome di una città o utilizzare la posizione corrente.
+
+
+
+
+
+4. Coerenza e standard (4a euristica)
+
+1. Osservazione (Task 1)  
+   - L’interruttore “Donazione” sembra apparire già attivo (colore acceso), ma non è chiaro se sia davvero in attivo o meno.  
+   - Problema: Stato acceso/spento degli interruttori poco evidente o poco coerente.  
+   - Gravità: 2 (Medio).  
+   - Suggerimento: Adottare modalità standard (ad esempio, azzurro acceso per ON e grigio per OFF, oppure etichette testuali ON/OFF), così che l’utente non debba interpretare i colori.
+
+2. Osservazione (Task 3)  
+   - Lo stesso problema si manifesta con l’interruttore “Consegna”: non è chiaro se sia selezionato o meno.  
+   - Problema: Mancanza di standard nella rappresentazione degli interruttori.  
+   - Gravità: 2 (Medio).  
+   - Suggerimento: Mantenere lo stesso stile per tutti gli interruttori dell’applicazione.
+
+
+
+
+5. Prevenzione degli errori (5a euristica)
+
+1. Osservazione (Task 1 e Task 3)  
+   - L’utente può confondere la “Mappa” (che è una modalità di visualizzazione) con l’icona della posizione (GPS), che è un’azione di localizzazione.  
+   - Problema: Possibili pressioni errate.  
+   - Gravità: 3 (Alto), può generare errori.  
+   - Suggerimento: Rinominare i pulsanti e separarli in modo evidente oppure inserire la possibilità di filtrare per città nei filtri generali.
+
+
+
+
+
+6. Riconoscimento piuttosto che ricordo (6a euristica)
+
+1. Osservazione (Task 1)  
+   - L’utente deve ricordare la differenza tra la “Mappa” e il pulsante della posizione (GPS), poiché non è indicata in modo esplicito.  
+   - Gravità: 2 (Medio).  
+   - Suggerimento: Aggiungere etichette o icone facilmente riconoscibili per ridurre la necessità di memorizzare le operazioni da effettuare.
+
+
+
+
+
+7. Flessibilità ed efficienza d’uso (7a euristica)
+
+1. Osservazione (Task 2)  
+   - L’utente si aspetta strumenti rapidi: un selettore per le foto, un tastierino numerico per il prezzo, un selettore dell’orario per la fascia oraria.  
+   - Problema: L’assenza di elementi di interfaccia specifici rallenta l’inserimento delle informazioni.  
+   - Gravità: 1 (Basso).  
+   - Suggerimento: Rendere chiare le modalità di inserimento dei dati.
+
+
+
+
+
+8. Design estetico e minimalista (8a euristica)
+
+1. Osservazione generale  
+   - Le icone di filtro, mappa e posizione (GPS) sono tutte molto vicine, creando confusione.  
+   - Problema: Eccesso di elementi ravvicinati.  
+   - Gravità: 1 (Basso).  
+   - Suggerimento: Raggruppare i filtri in un unico menu o ridurre il numero di icone isolate.
+
+
+
+
+9. Aiutare gli utenti a riconoscere, diagnosticare e risolvere gli errori (9a euristica)
+
+1. Osservazione (Task 2)  
+   - Non è chiaro come il sistema si comporti nel caso in cui l’utente inserisca un prezzo non valido (ad esempio, lettere invece di cifre).  
+   - Problema: Assenza di messaggi di errore.  
+   - Gravità: 2 (Medio).  
+   - Suggerimento: Prevedere messaggi di errore e, se possibile, bloccare la digitazione di valori non validi (usando un tastierino numerico).
+
+
+
+
+10. Aiuto e documentazione (10a euristica)
+
+1. Osservazione (Task 1)  
+   - L’utente è disorientato dalla presenza contemporanea di icone come mappa, filtri e GPS, senza indicazioni su come utilizzarle.  
+   - Problema: Mancanza di un tutorial.  
+   - Gravità: 2 (Medio).  
+   - Suggerimento: Fornire una breve guida iniziale che illustri le funzioni principali.
+

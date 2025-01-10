@@ -1,0 +1,135 @@
+Task 1
+
+1. Visibilità dello stato del sistema (1a euristica)  
+- L’utente apre i filtri, seleziona la posizione corrente, abilita la donazione e applica i filtri.  
+- È sempre visibile quale filtro sia attivo.
+
+
+2. Corrispondenza tra il sistema e il mondo reale (2a euristica)  
+- I termini “donazione”, “posizione corrente” e “box” sono immediatamente comprensibili.  
+- Nessun problema: icone e nomi riflettono ciò che l’utente si aspetta.
+
+3. Controllo e libertà dell’utente (3a euristica)  
+- Un pulsante “Home” o “Indietro” è disponibile in ogni schermata, quindi si può tornare alla pagina principale o modificare i filtri in qualsiasi momento.  
+- Nessun problema: l’utente non si sente obbligato a proseguire in un determinato percorso.
+
+4. Coerenza e standard (4a euristica)  
+- Gli interruttori seguono una stessa grafica e si trovano in posizioni coerenti nelle diverse schermate.  
+- Nessun problema.
+
+5. Prevenzione degli errori (5a euristica)  
+- La sezione “box donazioni” è ben distinta, impedendo confusioni con altre tipologie di box.  
+- Nessun problema: l’utente comprende chiaramente dove cliccare.
+
+6. Riconoscimento piuttosto che ricordo (6a euristica)  
+- Le icone mostrano chiaramente se si tratta di una box per donazione o di un’altra tipologia.  
+- Nessun problema: il riconoscimento visivo è immediato.
+
+7) Flessibilità ed efficienza d’uso (7a euristica)
+- L’inserimento della posizione e dei filtri avviene con selettori rapidi o tastierini numerici, accelerando il processo.
+- Nessun problema: l’utente completa il task in pochi passaggi.
+
+8) Design estetico e minimalista (8a euristica) 
+- La schermata filtri non è sovraccarica di elementi: i pulsanti e gli interruttori principali sono distanziati e chiari.  
+- Nessun problema: l’interfaccia è pulita e semplice da comprendere.
+
+9) Aiutare gli utenti a riconoscere, diagnosticare e risolvere gli errori (9a euristica)  
+- I filtri portano sempre risultati o feedback visivi 
+- Nessun problema: il sistema offre feedback adeguati.
+
+10) Aiuto e documentazione (10a euristica)  
+- Non è presente nessuna sezione di help.  
+
+
+
+Task 2
+
+1) Visibilità dello stato del sistema (1a euristica)  
+- La sezione “Inserisci annuncio” è indicata in maniera chiara.  
+- Nessun problema: l’utente capisce subito in quale sezione si trova.
+
+2) Corrispondenza tra il sistema e il mondo reale (2a euristica)  
+- L’icona per inserire foto (fotocamera o galleria) rispecchia le abitudini di utilizzo di IOS.
+- Nessun problema: caricamento delle immagini senza complicazioni.
+
+3) Controllo e libertà dell’utente (3a euristica)  
+- Un pulsante “Torna indietro” o "Home" appare in qualunque schermata, permettendo di abbandonare l’inserimento in qualsiasi momento.  
+- Nessun problema: l’utente non si sente forzato a completare tutti i campi.
+
+4) Coerenza e standard (4a euristica)  
+- Il tasto “Pubblica annuncio” riprende lo stesso stile dei pulsanti principali (colore, posizione, grandezza).  
+- Nessun problema: non si riscontrano differenze rispetto ad altre sezioni dell’app.
+
+5) Prevenzione degli errori (5a euristica)  
+- Campi numerici (prezzo o quantità) con tastierino dedicato prevengono errori di digitazione.  
+- Nessun problema: il sistema blocca l’inserimento di caratteri non validi.
+
+6) Riconoscimento piuttosto che ricordo (6a euristica)  
+- L’utente individua facilmente ogni sezione grazie a icone e testi, senza dover ricordare istruzioni precedenti.  
+- Nessun problema: l’inserimento risulta immediato.
+
+7) Flessibilità ed efficienza d’uso (7a euristica)  
+- La presenza di funzioni rapide velocizza la compilazione.  
+- Nessun problema: l’utente completa l’annuncio in modo rapido ed efficace.
+
+8) Design estetico e minimalista (8a euristica)  
+- La schermata di inserimento annuncio è sintetica e comprensibile.
+- Nessun problema: i campi sono comprensibili a colpo d'occhio.
+
+9) Aiutare gli utenti a riconoscere, diagnosticare e risolvere gli errori (9a euristica)  
+- I campi di inserimento dell'annuncio risultano comprensibili e quindi nessun campo viene lasciato vuoto.
+- Nessun problema: i campi di inserimento prevengono la possibilità di errori.
+
+10) Aiuto e documentazione (10a euristica)  
+- Non è presente nessuna sezione di help.  
+
+
+
+Task 3
+
+1) Visibilità dello stato del sistema (1a euristica)  
+- L’utente imposta diversi filtri e attiva la consegna, con i filtri evidenziati in modo chiaro.  
+- Nessun problema: risulta evidente quali filtri siano impostati.
+
+2) Corrispondenza tra il sistema e il mondo reale (2a euristica)  
+- “Consegna” e “ritiro in sede” sono etichette comprensibili.
+- Nessun problema: l’utente non confonde i termini.
+
+3) Controllo e libertà dell’utente (3a euristica)  
+- Un tasto “Home” e la possibilità di modificare i filtri in qualsiasi momento rendono il processo flessibile.  
+- Nessun problema: l’utente non si sente vincolato a completare tutti i passaggi se cambia idea.
+
+4) Coerenza e standard (4a euristica)  
+- L’interruttore “Consegna” è identico a quello “Donazione”.
+- Nessun problema: l’utente riconosce subito la funzionalità.
+
+5) Prevenzione degli errori (5a euristica)  
+- Selezionare la box giusta risulta facile, evitando scelte errate.  
+- Nessun problema: l’utente identifica la box corretta al primo colpo.
+
+6) Riconoscimento piuttosto che ricordo (6a euristica)  
+- Le icone per la consegna o il ritiro in sede e l’etichetta “pagamento online” sono ben visibili e non occorre ricordare passaggi precedenti.  
+- Nessun problema: nessuna confusione nel tipo di pagamento e tipologia di ritiro selezionata.
+
+7) Flessibilità ed efficienza d’uso (7a euristica)  
+- La fascia oraria è inserita mediante un selettore dedicato, la città/indirizzo può essere digitata o scelta tramite GPS.  
+- Nessun problema: la procedura è veloce e chiara.
+
+8) Design estetico e minimalista (8a euristica)  
+- L’elenco dei locali filtrati è presentato in modo pulito, con la distinzione tra box molto chiara.  
+- Nessun problema:
+
+9) Aiutare gli utenti a riconoscere, diagnosticare e risolvere gli errori (9a euristica)  
+- Nella selezione della città, c'è una modalità di autoriempimento durante la digitazione con tastiera.  
+- Nessun problema: 
+
+10) Aiuto e documentazione (10a euristica)  
+- Non è presente nessuna sezione di help.
+
+
+Conclusioni:
+
+- Tutti e tre i task (Task 1 su donazione, Task 2 sull’inserimento di un annuncio e Task 3 sull’utilizzo dei filtri per la consegna) sono stati completati senza alcuna difficoltà.  
+- Le etichette, le icone e i pulsanti (Home, Annulla, Pubblica) risultano coerenti e facili da individuare.  
+- Non emergono problemi di confusione o blocchi: la navigazione tra filtri, sezioni donazione/consegna, inserimento annunci e pagamento online è scorrevole.  
+

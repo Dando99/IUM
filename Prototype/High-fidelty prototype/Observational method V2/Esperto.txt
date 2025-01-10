@@ -1,0 +1,62 @@
+
+Task 1
+
+
+1. Riconoscimento piuttosto che ricordo (6a euristica)
+   Osservazione:
+   - L’inserimento di icone accanto alle sezioni per donazioni o box “normali” aiuta l’utente a riconoscere la sezione scelta.
+   Vantaggio:
+   - Riduce la necessità di ricordare passaggi o menu precedenti.
+
+
+2. Controllo e libertà dell’utente (3a euristica)
+   Osservazione:
+   - Il flusso delle operazioni risulta chiaro, ma manca un’icona o un pulsante che permetta di tornare alla schermata principale in qualsiasi momento.
+   Problema:
+   - L’utente non può interrompere il flusso in modo diretto o non sa come fare.
+
+
+
+Task 2
+
+1. Flessibilità ed efficienza d’uso (7a euristica)
+   Osservazione:
+   - L’inserimento di tastierini numerici facilitano l’utente durante l’inserimento dati.
+   Vantaggio:
+   - Riduce il rischio di errori e velocizza l'inserimento delle informazioni.
+ 
+
+2. Controllo e libertà dell’utente (3a euristica)
+   Osservazione:
+   - Anche qui manca un pulsante o un’icona per tornare alla Home immediatamente.
+   Problema:
+   - L’utente risulta “bloccato” in un flusso di inserimento e non sa come interromperlo.
+ 
+
+
+Task 3
+
+1. Riconoscimento piuttosto che ricordo (6a euristica)
+   Osservazione:
+   - Il vantaggio riscontrato nel Task 1 (icone per donazione o box normali) è confermato.
+   Vantaggio:
+   - Riduce la confusione su quale sia la sezione dedicata alla donazione rispetto a quella di acquisto normale.
+
+2. Controllo e libertà dell’utente (3a euristica)
+   Osservazione:
+   - Rimane lo stesso problema del Task 1 e Task 2 per il pulsante Home.
+   Problema:
+   - L’utente non può tornare all’inizio in modo immediato.
+
+
+Problemi Principali:
+
+1. Mancanza di un tasto Home (3a euristica)
+   - L’utente non ha modo di tornare facilmente alla schermata principale durante i vari processi.
+
+2. Distinzione tra donazione e acquisto ordinario (6a euristica)
+   - L’uso di icone nelle diverse sezioni facilita la scelta.
+
+3. Inserimento di dati con strumenti dedicati (7a euristica)
+   - Tastierini numerici semplificano l’inserimento.
+

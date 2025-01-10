@@ -1,0 +1,67 @@
+Task 1
+
+1. Controllo e libertà dell’utente (3a euristica)
+   Osservazione:
+   - L’utente preme sull’icona dei filtri, abilita l’interruttore per donazione e applica i filtri, poi seleziona il locale e sceglie la sezione per le box donazioni.  
+   Problema:
+   - La scelta della sezione donazioni non è particolarmente intuitiva.  
+   Suggerimento:
+   - Rendere più chiare le voci del menu che indicano la sezione dedicata alle donazioni, magari con icone.
+
+2. Riconoscimento piuttosto che ricordo (6a euristica)
+   Osservazione:
+   - Una volta trovata la box da donare, l’utente procede all’acquisto, ma ci si affida molto alla memoria per distinguere la box donazione.  
+   Problema:
+   - Se non è ben evidenziata, l’utente potrebbe confondere la box da donare con altre opzioni.  
+   Suggerimento:
+   - Evidenziare chiaramente la box dedicata alla donazione.
+
+
+Task 2
+
+1. Flessibilità ed efficienza d’uso (7a euristica)
+   Osservazione:
+   - L’utente preme su “inserisci annuncio”, poi sull’icona delle foto e compila i vari campi.  
+   Problema:
+   - Sebbene il flusso sia chiaro, l’utente impiega tempo per trovare il tasto di pubblicazione.  
+   Suggerimento:
+   - Posizionare il pulsante “Pubblica annuncio” nella sezione dello schermo in cui finisce il flusso di inserimento delle informazioni.
+
+2. Controllo e libertà dell’utente (3a euristica)
+   Osservazione:
+   - Non è specificato se sia possibile uscire o annullare l’inserimento dell’annuncio a metà processo.  
+   Problema:
+   - L’utente potrebbe sentirsi obbligato a completare tutti i campi senza poter tornare indietro.
+   Suggerimento:
+   - Introdurre un tasto “Torna alla home” per dare l'opportunità all’utente di tornare indietro durante la compilazione.
+
+
+Task 3
+
+1. Controllo e libertà dell’utente (3a euristica)
+   Osservazione:
+   - L’utente preme sull’icona dei filtri, abilita la fascia oraria, la città, l’indirizzo a mano, poi la consegna, e applica i filtri. Dopo aver selezionato il locale, si riscontra la stessa difficoltà del Task 1 nel capire quale box scegliere.  
+   Problema:
+   - La scelta della sezione delle box non è immediatamente chiara
+   Suggerimento:
+   - Rendere più intuitive le sezioni delle varie tipologie di box da scegliere.
+
+2. Riconoscimento piuttosto che ricordo (6a euristica)
+   Osservazione:
+   - L’utente, una volta aperta la sezione delle box disponibili, deve spuntare il box “consegna” e procedere al pagamento online.  
+   Problema:
+   - L’utente potrebbe non distinguere facilmente l'etichetta che indica il pagamento online con consegna.  
+   Suggerimento:
+   - Utilizzare etichette o icone chiaramente diverse per “consegna” e “ritiro”.
+
+
+Problemi Principali:
+
+1. Distinzione tra box donazione e altre box (Riconoscimento piuttosto che ricordo, 6a euristica)
+   - L’utente fatica a identificare immediatamente la sezione donazioni o la box dedicata alla consegna/ritiro.
+
+2. Mancanza di indicazioni chiare su alcuni passaggi (Controllo e libertà dell’utente, 3a euristica)
+   - Non sempre è presente un metodo rapido per tornare indietro o annullare un’azione.
+
+3. Difficoltà nel trovare alcuni pulsanti (Flessibilità ed efficienza d’uso, 7a euristica)
+   - Il tasto per pubblicare l’annuncio potrebbe essere poco visibile, rallentando il flusso.
